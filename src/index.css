@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  
+background-color: rgb(215, 203, 203);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.content{
+  min-height: 200px;
+  border-radius: 15px;
+  background-color: #ffff;
+  box-shadow: 1px 4px 4px 1px rgba(85,85,85,0.25); 
+  transition: .3s ease;
+}
+ .item{
+  border-bottom: 1px solid gray;
+  padding: 2px;
+ }
+.avatar{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.item div p{
+margin: 0;
+}
