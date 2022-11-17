@@ -3,12 +3,12 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown, Row } from 'react-bo
 
 const NavBar = ({ search }) => {
 
-  const [item,setItem]=useState("")
+  const [item, setItem] = useState("")
   return (
     <Row className='m-0' >
       <Navbar bg="dark" variant='dark' expand="lg">
         <Container  >
-          <Navbar.Brand href="#">restaurant </Navbar.Brand>
+          <Navbar.Brand href="#">EXPLORE NEWEST MOVIES</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -16,7 +16,6 @@ const NavBar = ({ search }) => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -24,11 +23,8 @@ const NavBar = ({ search }) => {
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
-                onChange={e=>setItem(e.target.value)}
+                onChange={e => search(e.target.value)}
               />
-              <Button variant="outline-success"
-              onClick={()=>search(item)}
-              >Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
